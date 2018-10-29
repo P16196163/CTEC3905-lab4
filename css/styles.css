@@ -1,0 +1,81 @@
+/* MOBILE AND GLOBAL STYLES */
+
+/* applies to screens smaller than 500px (first breakpoint) */
+/* and above unless overwritten below */
+
+body {
+  background: #fcc;
+}
+
+.menu {
+  background-color: brown;
+  color: green;
+  line-height: 2em;
+  text-align: center;
+}
+
+.menu-toggle {
+  display: flex;
+}
+
+/*
+.menu:hover + nav, nav:hover {
+  display:flex;
+  }
+*/
+nav {
+  display: none;
+  justify-content: center;
+  background: purple;
+  color: #F7C9F7;
+}
+
+nav a {
+  padding: 1em 1em;
+  background: #F7C9F7;
+  color: purple;
+  transition: all 1.5s;
+}
+
+nav a:hover {
+  color: #F7C9F7;
+  background-color: purple;
+}
+
+
+
+/* TABLET STYLES */
+
+@media screen and (min-width: 500px) {
+
+  /* applies to screens wider than 499px */
+
+  body {
+    background: #cfc;
+    text-align: center;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  nav {
+  display: flex;
+  justify-content: center;
+  background: purple;
+
+  }
+}
+
+
+
+/* DESKTOP STYLES */
+
+@media screen and (min-width: 1000px) {
+
+  /* applies to screens wider than 999px */
+
+  body {
+    background: #ccf;
+  }
+}
